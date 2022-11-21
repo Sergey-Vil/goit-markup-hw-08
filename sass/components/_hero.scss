@@ -3,44 +3,54 @@
 }
 
 .hero__conteiner {
-  // max-width: 480px;
-  background-image: url(../images/overlays.webp), url(../images/hero-dt.jpg);
+  
+  background-image: url(../images/overlays.webp), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: $white-color;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  @media screen and (max-width:1199px) {
-      background-image: url(../images/overlays.webp), url(../images/hero-tablet.jpg);
-        max-width: 768px;
-        padding-top: 118px;
-        padding-bottom: 118px;
-      
-    }
-  @media screen and (max-width:767px) {
-    background-image: url(../images/overlays.webp), url(../images/hero-mobile.jpg);
-    max-width: 480px;
-    padding-top: 118px;
+  padding-top: 118px;
     padding-bottom: 118px;
 
-  }
-
+  @media screen and (min-width:768px) {
+      background-image: url(../images/overlays.webp), url(../images/hero-tablet.jpg);
+      
+      
+    }
+  @media screen and (min-width:1200px) {
+    max-width: 1600px;
+    background-image: url(../images/overlays.webp), url(../images/hero-dt.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
 }
 
-// @media screen and (min-width:768pxpx) and (max-width:1199px){
-// }
-  .hero__conteiner {
-    max-width: 1600px;
+@media (min-device-pixel-ratio: 2) and (max-width:767px),
+ (min-resolution: 192dpi) and (min-width:1200px), 
+ (min-resolution: 2dppx) and (min-width:1200px){
+    .hero__conteiner {
+      background-image: url(../images/overlays.webp), url(../images/hero-mobile@2x.jpg);
+    }
   }
-// @media screen and (max-width:1199px){
-//   .hero__conteiner {
-//       max-width: 768px;
-//       padding-top: 118px;
-//       padding-bottom: 118px;
-//   }
-// }
+  
+@media (min-device-pixel-ratio: 2) and (min-width:768px),
+ (min-resolution: 192dpi) and (min-width:1200px), 
+ (min-resolution: 2dppx) and (min-width:1200px){
+    .hero__conteiner {
+      background-image: url(../images/overlays.webp), url(../images/hero-tablet2x.jpg);
+    }
+  }
+  
+@media (min-device-pixel-ratio: 2) and (min-width:1200px),
+ (min-resolution: 192dpi) and (min-width:1200px), 
+ (min-resolution: 2dppx) and (min-width:1200px){
+    .hero__conteiner {
+      background-image: url(../images/overlays.webp), url(../images/hero-dt@2x.jpg);
+    }
+  }
+  
+
+
 
 .hero__title {
   max-width: 696px;
