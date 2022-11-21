@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+     <header class="header">
       <div class="conteiner header__conteiner">
         <nav class="navigation">
           <a lang="en" href="./index.html" class="logo"
@@ -27,20 +27,19 @@
           <button
             type="button"
             class="menu-toggle js-open-menu"
-            data-menu-button
             aria-expanded="false"
+            aria-controls="mobile-menu"
           >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use class="js-open-menu" href="./images/sprite.svg#icon-menu_40px"></use>
-              <use class="js-close-menu" href="./images/sprite.svg#icon-close_40px"></use>
+              <use href="./images/sprite.svg#icon-menu_40px"></use>
             </svg>
           </button>
-          <div class="js-menu-container">
-            <!-- <button type="button" class="menu-toggle is-open">
+          <div class="js-menu-container  id="mobile-menu"">
+            <button type="button" class="menu-toggle js-close-menu">
               <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                <use class="js-close-menu" href="./images/sprite.svg#icon-close_40px"></use>
+                <use href="./images/sprite.svg#icon-close_40px"></use>
               </svg>
-            </button> -->
+            </button>
 
             <ul class="list menu__nav">
               <li class="menu__nav-item">
@@ -51,40 +50,42 @@
               </li>
               <li class="menu__nav-item"><a href="" class="menu__link">Контакти</a></li>
             </ul>
-            <ul class="list menu__contacts">
-              <li class="menu__contacts__item">
-                <a href="tel:+380961111111" class="menu__contact menu__contact--tel">
-                  +38 096 111 11 11</a
-                >
-              </li>
-              <li class="menu__contacts__item">
-                <a href="mailto:info@devstudio.com" class="menu__contact menu__contact--mail">
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
-            <ul class="list menu-social">
-              <li>
-                <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
+            <div>
+              <ul class="list menu__contacts">
+                <li class="menu__contacts__item">
+                  <a href="tel:+380961111111" class="menu__contact menu__contact--tel">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu__contacts__item">
+                  <a href="mailto:info@devstudio.com" class="menu__contact menu__contact--mail">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="list menu-social">
+                <li>
+                  <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a class="menu-social__link" href="#" target="_blank" rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <ul class="list navigation__list">
             <li class="navigation__item navigation__item--current">
