@@ -18,20 +18,30 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header ader class="header">
+    <header class="header">
       <div class="conteiner header__conteiner">
         <nav class="navigation">
           <a lang="en" href="./index.html" class="logo"
             >Web <span class="header__logo">Studio</span></a
           >
-          <button type="button" class="menu-button is-open">
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            data-menu-button
+            aria-expanded="false"
+          >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
-              <use class="icon-close" href="./images/sprite.svg#icon-close_40px"></use>
-              /
+              <use class="js-open-menu" href="./images/sprite.svg#icon-menu_40px"></use>
+              <use class="js-close-menu" href="./images/sprite.svg#icon-close_40px"></use>
             </svg>
           </button>
-          <div class="menu-conteiner">
+          <div class="js-menu-container">
+            <!-- <button type="button" class="menu-toggle is-open">
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="js-close-menu" href="./images/sprite.svg#icon-close_40px"></use>
+              </svg>
+            </button> -->
+
             <ul class="list menu__nav">
               <li class="menu__nav-item">
                 <a href="./index.html" class="menu__link menu__link--current">Студія</a>
@@ -78,12 +88,10 @@
           </div>
           <ul class="list navigation__list">
             <li class="navigation__item navigation__item--current">
-              <a href="./index.html" class="navigation__link">Студія</a>
+              <a href="./index.html" class="navigation__link navigation__link--current">Студія</a>
             </li>
-            <li class="navigation__item navigation__item--current">
-              <a href="./portfolio.html" class="navigation__link navigation__link--current"
-                >Портфоліо</a
-              >
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
             </li>
             <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
           </ul>
