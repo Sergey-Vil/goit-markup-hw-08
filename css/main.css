@@ -377,25 +377,11 @@ img {
   padding-left: 0;
   list-style: none;
 }
-@media screen and (min-width: 768px) {
-  .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 @media screen and (max-width: 767px) {
   .list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .list .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -758,6 +744,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+.menu-social .menu-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 2px solid black;
 }
 
 .menu-social__link {

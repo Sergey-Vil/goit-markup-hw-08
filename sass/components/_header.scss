@@ -279,11 +279,12 @@
 }
 .menu-social{
   display: flex;
-  gap:10px;
+ 
 
 }
 .menu-social__link{
   display: block;
+  flex-basis: ((100% - 60px)/4);
   box-sizing: border-box;
   font-weight: 500;
   font-size: 18px;
@@ -291,12 +292,8 @@
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
-  padding-right: 10px;
-  &:not(:last-child){
-    padding-right: 10px;
-    border: 1px solid black;
-  }
 }
+
 
 .menu__contacts{
   gap: 32px;
