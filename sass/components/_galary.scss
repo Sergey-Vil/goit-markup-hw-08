@@ -9,14 +9,14 @@
   gap: 8px;
   margin-bottom: 50px;
   @media screen and (max-width:1199px) {
-    gap: 8px;
-      margin-bottom: 30px;
+        margin-bottom: 30px;
   }
   @media screen and (max-width:767px) {
     gap: 15px 8px;
     margin-bottom: 40px;
   }
 }
+
 
 .button {
   display: block;
@@ -77,6 +77,15 @@
   @media screen and (max-width:767px) {
     width: 100%;
   }
+
+  // &:not(:nth-child(3n+3)) {
+  //   margin-right: 30px;
+  // }
+
+
+  // &:not(:nth-child(n+7)) {
+  //   margin-bottom: 30px;
+  // }
 
 }
 
