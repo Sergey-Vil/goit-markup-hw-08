@@ -279,12 +279,17 @@
 }
 .menu-social{
   display: flex;
- 
+  gap: 10px;
 
 }
+ .menu-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);;
+   
+ }
 .menu-social__link{
   display: block;
-  flex-basis: ((100% - 60px)/4);
+  // flex-basis: ((100% - 60px)/4);
   box-sizing: border-box;
   font-weight: 500;
   font-size: 18px;
