@@ -203,8 +203,8 @@
   transition: transform 250ms ease-in-out;
   .menu-toggle {
       position: absolute;
-      top: 16px;
-      right: 16px;
+      top: 10px;
+      right: 30px;
       color: #fff;
     }
   &.is-open {
@@ -212,6 +212,8 @@
     }
    }
    .menu-toggle{
+    position: absolute;
+    right: 15px;
     min-height: 40px;
     min-width: 40px;
     display: flex;
