@@ -1,19 +1,19 @@
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .features__section {
     padding-bottom: 0;
-}
+  }
 }
 .features__title {
   margin-bottom: 50px;
   display: none;
 }
 
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    width:auto;
-   gap: 30px;
-  }
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 30px;
+}
 
 .features__subject {
   text-align: center;
@@ -35,9 +35,8 @@
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .features__subject {
-
     text-align: start;
 
     &::before {
@@ -46,10 +45,10 @@
     }
   }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .features__subject {
     text-align: start;
-    
+
     &::before {
       width: 270px;
       height: 120px;
@@ -86,21 +85,16 @@
   font-size: 14px;
   line-height: 1.7142;
   color: $title-text-color;
-  @media screen and (min-width:768px) {
-      max-width: 354px;
-      font-size: 14px;
-      line-height: 1.7142;
-      color: $title-text-color;
-    }
-  @media screen and (min-width:1200px) {
-        max-width: 270px;
-        font-size: 14px;
-        line-height: 1.7142;
-        color: $title-text-color;
-    
-  
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    font-size: 14px;
+    line-height: 1.7142;
+    color: $title-text-color;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 1.7142;
+    color: $title-text-color;
+  }
 }
-
-
-
